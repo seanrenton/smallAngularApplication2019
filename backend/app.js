@@ -10,7 +10,7 @@ const app = express();
 
 mongoose
   .connect(
-    'mongodb://localhost:27017/angular'
+    'mongodb://localhost:27017/angular', { useNewUrlParser: true }
   )
   .then(() => {
     console.log("Connected to database!");
